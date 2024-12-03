@@ -1,0 +1,127 @@
+VS Code Extension Samples
+This repository contains sample code illustrating the VS Code extension API. Each sample is a self-contained extension that explains one topic in VS Code API or VS Code's Contribution Points. You can read, play with or adapt from these samples to create your own extensions.
+
+You can expect from each sample:
+
+An explanation of its functionality
+A gif or screenshot demonstrating its usage
+Link to a guide on VS Code website, if it has one
+Listing of used VS Code API and Contribution Points
+Code of the same style, enforced using ESLint
+Prerequisites
+You need to have node and npm installed on your system to run the examples. It is recommended to use the node version used for VS Code development itself which is documented here
+
+Usage
+git clone https://github.com/Microsoft/vscode-extension-samples
+code <any-sample-folder>
+npm install in the terminal, then F5 to run the sample
+Alternatively, follow the instructions in each sample's README for setting up and running the sample
+Getting Started
+Hello World Sample: The Hello World sample for VS Code. See Extension Anatomy documentation.
+Hello World Minimal Sample: A minimal version of Hello World Sample written in JavaScript.
+Hello World Test Sample: Hello World sample with extension integration test. See Testing Extensions documentation.
+Hello World Web Sample: The Hello World sample for VS Code Web. See the Web Extensions guide.
+Samples
+Sample	Guide on VS Code Website	API & Contribution
+Webview Sample	/api/extension-guides/webview	window.createWebviewPanel
+window.registerWebviewPanelSerializer
+Webview View Sample	N/A	window.registerWebviewViewProvider
+Webview Codicons Sample	N/A	
+Status Bar Sample	N/A	window.createStatusBarItem
+StatusBarItem
+Tree View Sample	/api/extension-guides/tree-view	window.createTreeView
+window.registerTreeDataProvider
+TreeView
+TreeDataProvider
+contributes.views
+contributes.viewsContainers
+Task Provider Sample	/api/extension-guides/task-provider	tasks.registerTaskProvider
+Task
+ShellExecution
+contributes.taskDefinitions
+Multi Root Sample	N/A	workspace.getWorkspaceFolder
+workspace.onDidChangeWorkspaceFolders
+Completion Provider Sample	N/A	languages.registerCompletionItemProvider
+CompletionItem
+SnippetString
+Code Actions Sample	N/A	languages.registerCodeActionsProvider
+CodeActionProvider
+File System Provider Sample	N/A	workspace.registerFileSystemProvider
+Editor Decorator Sample	N/A	TextEditor.setDecorations
+DecorationOptions
+DecorationInstanceRenderOptions
+ThemableDecorationInstanceRenderOptions
+window.createTextEditorDecorationType
+TextEditorDecorationType
+contributes.colors
+L10n Sample	N/A	
+Terminal Sample	N/A	window.createTerminal
+window.onDidChangeActiveTerminal
+window.onDidCloseTerminal
+window.onDidOpenTerminal
+window.Terminal
+window.terminals
+Extension Terminal Sample	N/A	window.createTerminal
+window.Pseudoterminal
+window.ExtensionTerminalOptions
+Color Theme Sample	/api/extension-guides/color-theme	contributes.themes
+Product Icon Theme Sample	/api/extension-guides/product-icon-theme	contributes.productIconThemes
+Vim Sample	N/A	commands
+StatusBarItem
+window.createStatusBarItem
+TextEditorCursorStyle
+window.activeTextEditor
+Position
+Range
+Selection
+TextEditor
+TextEditorRevealType
+TextDocument
+webpack-sample	/api/working-with-extensions/bundling-extension	
+esbuild-sample	/api/working-with-extensions/bundling-extension	
+Source Control Sample	/api/extension-guides/scm-provider	workspace.workspaceFolders
+SourceControl
+SourceControlResourceGroup
+scm.createSourceControl
+TextDocumentContentProvider
+contributes.menus
+Commenting API Sample	N/A	
+Document Editing Sample	N/A	commands
+Custom Data Sample	/api/extension-guides/custom-data-extension	
+CodeLens Provider Sample	N/A	languages.registerCodeLensProvider
+CodeLensProvider
+CodeLens
+Call Hierarchy Sample	N/A	languages.registerCallHierarchyProvider
+CallHierarchyProvider
+CallHierarchyItem
+CallHierarchyOutgoingCall
+CallHierarchyIncomingCall
+Custom Editors Sample	/api/extension-guides/custom-editors	window.registerCustomEditorProvider
+CustomTextEditorProvider
+contributes.customEditors
+Semantic tokens	/api/language-extensions/semantic-highlight-guide	languages.registerDocumentSemanticTokensProvider
+vscode.DocumentSemanticTokensProvider
+Test Provider Sample	N/A	
+Getting Started Sample	N/A	
+notebook-renderer-sample	/api/extension-guides/notebook#notebook-renderer	contributes.notebookRenderer
+notebook-extend-markdown-renderer-sample	/api/extension-guides/notebook#notebook-renderer	contributes.notebookRenderer
+jupyter-server-provider-sample	N/A	
+Chat Sample	N/A	
+Chat Tutorial	N/A	
+Notifications Sample	N/A	
+Language Server Protocol Samples
+Sample	Guide on VS Code Website	API & Contribution
+Snippet Sample	/api/language-extensions/snippet-guide	contributes.snippets
+Language Configuration Sample	/api/language-extensions/language-configuration-guide	contributes.languages
+LSP Sample	/api/language-extensions/language-server-extension-guide	
+LSP Log Streaming Sample	N/A	
+LSP Multi Root Server Sample	https://github.com/Microsoft/vscode/wiki/Extension-Authoring:-Adopting-Multi-Root-Workspace-APIs#language-client--language-server	
+LSP Web Extension Sample	/api/language-extensions/language-server-extension-guide	
+LSP User Input Sample	N/A	
+LSP Embedded Language Service	N/A	
+LSP Embedded Request Forwarding	N/A	
+Wasm language server	N/A	
+License
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+Licensed under the MIT License.
