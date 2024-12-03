@@ -1,5 +1,5 @@
 <h1 align="center">
-VS Code Extension Samples 
+VS Code Extension Samples
 </h1> 
 
 This repository contains sample code illustrating the VS Code extension API. Each sample is a self-contained extension that explains one topic in [VS Code API](https://code.visualstudio.com/api/references/vscode-api) or VS Code's [Contribution Points](https://code.visualstudio.com/api/references/contribution-points). You can read, play with or adapt from these samples to create your own extensions.
